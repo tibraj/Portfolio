@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fff;
+    height: 125vh;
+    background: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat fixed center;
+    background-size: 100%;
+  }
+
+header {
+    background-color: #379683;
+    position: fixed;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 25px 0 #000000;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+header li a:hover {
+    cursor: pointer;
+}
