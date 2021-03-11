@@ -6,9 +6,10 @@
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #fff;
-    height: 125vh;
+    height: 75vh;
     background: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat fixed center;
     background-size: 100%;
+    margin-top: 80px;
   }
 
 header {
@@ -38,4 +39,61 @@ header li a {
 
 header li a:hover {
     cursor: pointer;
+}
+
+/* main {
+    color: #fff;
+    align-self: center;
+    width: 50%;
+    margin-top: 200px;
+} */
+
+main p {
+    /* color: #fff; */
+    color: #000000;
+    line-height: 1.25em;
+    align-self: center;
+    width: 50%;
+    margin-top: 150px;
+    margin-right: 70px;
+    float: right;
+}
+
+main img {
+    width: 25%;
+    height: 25%;
+    margin-top: 25px;
+    margin-left: 200px;
+    border-radius: 300px;
+    float: left;
+}
+
+footer {
+    background-color: #379683;
+    position: fixed;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 #000000;
+    top: 600px;
+    height: 25%;
+    width: 100%;
+    opacity: .7;
+}
+
+footer * {
+    display: inline;
+}
+
+footer li {
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 175px;
+}
+
+footer li img {
+    display: inline;
+    margin-bottom: 50px;;
+    width: 75px;
+    height: 75px;
 }
