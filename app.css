@@ -1,3 +1,7 @@
+/* Smartphones (portrait and landscape) ----------- */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +11,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #fff;
     height: 100%;
-    background: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat fixed center;
-    background-size: 100%;
+    background-image: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin-top: 80px;
+    
   }
 
 header {
@@ -48,24 +56,27 @@ header li a:hover {
     margin-top: 200px;
 } */
 
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
 main p {
-    /* color: #fff; */
-    color: #000000;
+    color: #fff;
     line-height: 1.25em;
     align-self: center;
-    width: 50%;
-    margin-top: 150px;
+    width: 75%;
+    margin-top: 125px;
     margin-right: 70px;
-    float: right;
 }
 
 main img {
-    width: 25%;
-    height: 25%;
-    margin-top: 25px;
+    width: 50%;
+    height: 75%;
+    margin-top: 115px;
     margin-left: 200px;
     border-radius: 300px;
-    float: left;
 }
 
 footer {
@@ -87,13 +98,29 @@ footer * {
 
 footer li {
     color: #000000;
-    margin-top: 20px;
-    margin-left: 175px;
+    margin-top: 15px;
+    margin-left: 225px;
 }
 
-footer li img {
+footer li div {
     display: inline;
-    margin-bottom: 50px;;
+    margin-bottom: 75px;
     width: 75px;
     height: 75px;
+}
+
+@media(max-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    main img {
+        margin-right: 20px;
+    }
+
+    main p {
+        text-align: center;
+    }
 }

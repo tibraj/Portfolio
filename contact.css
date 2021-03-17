@@ -1,3 +1,19 @@
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        background: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center cover no-repeat fixed;
+        margin-top: 80px;
+      }
+}
+
 * {
     margin: 0;
     padding: 0;
