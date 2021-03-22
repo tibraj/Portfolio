@@ -1,126 +1,43 @@
-/* Smartphones (portrait and landscape) ----------- */
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden; 
+}
 
+.btn-main, .btn-light, .btn-dark {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin: 5px;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer; 
+}
 
-
-* {
-    margin: 0;
-    padding: 0;
-  }
+.btn-main {
+    color: #333;
+    background-color: #a4c2a5; 
+}
   
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #fff;
-    height: 100%;
-    background-image: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-top: 80px;
-    
-  }
-
-header {
-    background-color: #379683;
-    position: fixed;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0 0 25px 0 #000000;
+  .btn-light {
+    color: #333;
+    background-color: #f1f2eb; 
+}
+  
+  .btn-light {
+    color: #333;
+    background-color: #d8dad3; 
+}
+  
+  .btn-dark {
+    color: #f4f4f4;
+    background-color: #4a4a48; 
 }
 
-header * {
-    display: inline;
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #a4c2a5; 
 }
 
-header li {
-    margin: 20px;
-}
-
-header li a {
-    color: #000000;
-    text-decoration: none;
-}
-
-header li a:hover {
-    cursor: pointer;
-}
-
-/* main {
-    color: #fff;
-    align-self: center;
-    width: 50%;
-    margin-top: 200px;
-} */
-
-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-}
-
-main p {
-    color: #fff;
-    line-height: 1.25em;
-    align-self: center;
-    width: 75%;
-    margin-top: 125px;
-    margin-right: 70px;
-}
-
-main img {
-    width: 50%;
-    height: 75%;
-    margin-top: 115px;
-    margin-left: 200px;
-    border-radius: 300px;
-}
-
-footer {
-    background-color: #379683;
-    position: fixed;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 25px 0 #000000;
-    top: 650px;
-    height: 25%;
-    width: 100%;
-    opacity: .7;
-}
-
-footer * {
-    display: inline;
-}
-
-footer li {
-    color: #000000;
-    margin-top: 15px;
-    margin-left: 225px;
-}
-
-footer li div {
-    display: inline;
-    margin-bottom: 75px;
-    width: 75px;
-    height: 75px;
-}
-
-@media(max-width: 1200px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
-    }
-
-    main img {
-        margin-right: 20px;
-    }
-
-    main p {
-        text-align: center;
-    }
-}
