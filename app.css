@@ -141,7 +141,7 @@ a:hover {
     font-size: 1.2rem;
 }
 
-#about .about-content .profile {
+#about .about-content #profile {
     border-radius: 50%;
 }
 
@@ -255,6 +255,51 @@ a:hover {
 
 #footer .contact .contact-item {
     text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    #home {
+        height: 30rem;
+    }
+
+    #home .content {
+        margin-top: 30px;
+        font-size: 0.8rem;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #nav li {
+        padding: 0.8rem;
+    }
+
+    #home .content {
+        margin-top: -20px;
+    }
+
+    #home .content h1 {
+        font-size: 2.5rem;
+    }
+
+    #about .about-content,
+    #profile,
+    #projects .works .card,
+    #footer .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #profile {
+        border-radius: 75%;
+    }
+
+    #technologies .front-end {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
