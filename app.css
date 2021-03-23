@@ -216,6 +216,11 @@ a:hover {
     align-self: center;
 }
 
+#projects .works .card .iconify {
+    color: #566246;
+    font-size: 5rem;
+}
+
 #projects .works .card  .view-link {
     margin-left: 35px;
 }
@@ -223,6 +228,8 @@ a:hover {
 #projects .works .card h3 {
     text-align: center;
 }
+
+
 
 #footer .contact {
     display: grid;
