@@ -121,3 +121,61 @@ a:hover {
 #nav li {
     padding: 1rem 1.5rem;
 }
+
+#about .title {
+    padding: 15px;
+    border-bottom: 2px #a4c2a5 solid;
+    text-align: center; 
+}
+
+#about .about-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    align-items: center;
+    margin: 20px;
+}
+
+#about .about-content p {
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#about .about-content .profile {
+    border-radius: 50%;
+}
+
+#technologies .languages {
+    margin-bottom: 30px;
+}
+
+#technologies h2 {
+    margin: 20px 0px;
+}
+
+#technologies p {
+    text-align: center;
+    margin-top: 7px;
+}
+
+#technologies .front-end {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies .front-end i {
+    color: #a4c2a5;
+}
+
+#technologies .front-end .iconify {
+    color: #a4c2a5;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+
+
